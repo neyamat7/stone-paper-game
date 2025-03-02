@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper</title>
+    <!-- tailwind css link -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="text-center">
+    <div class="bg-slate-700 text-white text-4xl font-extrabold p-5">
+      Stone Paper Scissors
+    </div>
+
+    <!-- stone paper and scissor images -->
+
+    <div id="choices" class="flex justify-center mt-10 gap-10">
+      <div id="stone" class="choice w-36 h-36 rounded-full">
+        <img
+          class="w-full h-full object-cover rounded-full"
+          src="images/rock.png"
+          alt=""
+        />
+      </div>
+
+      <div id="paper" class="choice w-36 h-36 rounded-full">
+        <img
+          class="w-full h-full object-cover rounded-full"
+          src="images/paper.png"
+          alt=""
+        />
+      </div>
+
+      <div id="scissor" class="choice w-36 h-36 rounded-full">
+        <img
+          class="w-full h-full object-cover rounded-full"
+          src="images/scissors.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- count wins -->
+    <div class="flex justify-center mt-16 gap-16 font-semibold text-4xl">
+      <div>
+        <h1 id="user-count">0</h1>
+        <p class="mt-3">You</p>
+      </div>
+
+      <div>
+        <h1 id="comp-count">0</h1>
+        <p class="mt-3">Computer</p>
+      </div>
+    </div>
+
+    <!-- messages -->
+    <div
+      id="msg"
+      class="bg-slate-700 text-white text-4xl py-3 px-6 inline-flex mt-16 rounded-xl font-semibold"
+    >
+      <h1>Play Your Move</h1>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
