@@ -21,7 +21,7 @@ function playGame(userChoice) {
   if (userChoice === "stone") {
     winUser = computerChoice === "paper" ? false : true;
   } else if (userChoice === "paper") {
-    winUser = computerChoice === "rock" ? true : false;
+    winUser = computerChoice === "stone" ? true : false;
   } else if (userChoice === "scissor") {
     winUser = computerChoice === "paper" ? true : false;
   }
